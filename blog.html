@@ -37,7 +37,46 @@
 
     </header>
     <main>
-
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" checked="checked" />
+                <div class="collapse-title text-xl font-medium">a. What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a webpage as a tree of objects, allowing scripts (like JavaScript) to access, manipulate, and modify the content, structure, and style of a website dynamically.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">b. How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p>To select an element from the DOM, you can use methods like:</p>
+                    <ul>
+                        <li>document.getElementById('id') - selects an element by its ID.</li>
+                        <li>document.querySelector('selector') - selects the first element that matches a CSS selector.</li>
+                        <li>document.getElementsByClassName('class') - selects elements by their class name.</li>
+                        <li>document.getElementsByTagName('tag') - selects elements by their tag name.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">c. What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                    <p>Event delegation is a technique where a single event listener is attached to a parent element to handle events from its child elements. Instead of adding individual listeners to each child, the event bubbles up to the parent, which captures it. This is useful because it improves performance and simplifies code, especially when managing dynamic or large sets of child elements.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">d. How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                    <p>To manipulate an element's attributes and styles using the DOM:</p>
+                    <ul>
+                        <li>Attributes: Use setAttribute() to modify or add an attribute (e.g., element.setAttribute('src', 'image.jpg')) and getAttribute() to retrieve it.</li>
+                        <li>Styles: Access or modify the style property (e.g., element.style.color = 'red') or use classList to add/remove classes (e.g., element.classList.add('active')).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 
