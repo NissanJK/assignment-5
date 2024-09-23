@@ -33,10 +33,24 @@
 </head>
 
 <body class="font-lexend">
-    <header>
-
+    <header class="w-full sticky top-0 z-10 bg-transparent backdrop-blur-md">
+        <div class="navbar bg-base-100 pt-8 pb-16 w-11/12 md:w-10/12 mx-auto bg-transparent">
+            <div class="navbar-start">
+                <a href="./index.html" class="btn btn-primary bg-lime-400 hover:bg-lime-600 text-black border-none w-fit">Home</a>
+            </div>
+            <div class="navbar-center gap-2 hidden lg:flex">
+                <img src="./assets/logo.png" alt="" class="size-12">
+                <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+            </div>
+            <div class="navbar-end">
+                <div class=" w-fit flex flex-row items-center gap-2">
+                    <img src="./assets/coin.png" alt="" class="size-6">
+                    <h1><span>10000</span> BDT</h1>
+                </div>
+            </div>
+        </div>
     </header>
-    <main>
+    <main class="w-11/12 md:w-10/12 mx-auto">
         <div class="join join-vertical w-full">
             <div class="collapse collapse-arrow join-item border-base-300 border">
                 <input type="radio" name="my-accordion-4" checked="checked" />
@@ -51,10 +65,10 @@
                 <div class="collapse-content">
                     <p>To select an element from the DOM, you can use methods like:</p>
                     <ul>
-                        <li>document.getElementById('id') - selects an element by its ID.</li>
-                        <li>document.querySelector('selector') - selects the first element that matches a CSS selector.</li>
-                        <li>document.getElementsByClassName('class') - selects elements by their class name.</li>
-                        <li>document.getElementsByTagName('tag') - selects elements by their tag name.</li>
+                        <li>1. document.getElementById('id') - selects an element by its ID.</li>
+                        <li>2. document.querySelector('selector') - selects the first element that matches a CSS selector.</li>
+                        <li>3. document.getElementsByClassName('class') - selects elements by their class name.</li>
+                        <li>4. document.getElementsByTagName('tag') - selects elements by their tag name.</li>
                     </ul>
                 </div>
             </div>
@@ -71,13 +85,16 @@
                 <div class="collapse-content">
                     <p>To manipulate an element's attributes and styles using the DOM:</p>
                     <ul>
-                        <li>Attributes: Use setAttribute() to modify or add an attribute (e.g., element.setAttribute('src', 'image.jpg')) and getAttribute() to retrieve it.</li>
-                        <li>Styles: Access or modify the style property (e.g., element.style.color = 'red') or use classList to add/remove classes (e.g., element.classList.add('active')).</li>
+                        <li><span class="font-bold">Attributes</span>: Use setAttribute() to modify or add an attribute (e.g., element.setAttribute('src', 'image.jpg')) and getAttribute() to retrieve it.</li>
+                        <li><span class="font-bold">Styles</span>: Access or modify the style property (e.g., element.style.color = 'red') or use classList to add/remove classes (e.g., element.classList.add('active')).</li>
                     </ul>
                 </div>
             </div>
         </div>
     </main>
+    <footer class="bg-slate-100 h-40 mt-16"></footer>
+
+    </footer>
 </body>
 
 </html>
