@@ -15,8 +15,8 @@ document.getElementById('btn-one')
             div.classList.add('p-8');
             div.classList.add('mb-5');
             div.innerHTML = `
-            <h1 class="font-extrabold text-xl md:text-2xl">${donateMoneyOne} Taka is Donated for Flood at Noakhali, Bangladesh</h1>
-            `
+            <h1 class="font-extrabold text-xl md:text-2xl mb-5">${donateMoneyOne} Taka is Donated for Flood at Noakhali, Bangladesh</h1>
+            <p class="text-xl"> <span class="font-bold">Date & Time :</span> ${new Date().toLocaleString()}</p>`
             document.getElementById('history-log').appendChild(div);
 
             document.getElementById('my_modal_1').showModal();
@@ -43,8 +43,8 @@ document.getElementById('btn-two')
             div.classList.add('p-8');
             div.classList.add('mb-5');
             div.innerHTML = `
-            <h1 class="font-extrabold text-xl md:text-2xl">${donateMoneyTwo} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
-            `
+            <h1 class="font-extrabold text-xl md:text-2xl mb-5">${donateMoneyTwo} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
+            <p class="text-xl"> <span class="font-bold">Date & Time :</span> ${new Date().toLocaleString()}</p>`
             document.getElementById('history-log').appendChild(div);
 
             document.getElementById('my_modal_2').showModal();
@@ -71,8 +71,8 @@ document.getElementById('btn-three')
             div.classList.add('p-8');
             div.classList.add('mb-5');
             div.innerHTML = `
-            <h1 class="font-extrabold text-xl md:text-2xl">${donateMoneyThree} Taka is Donated for Injured in the Quota Movement</h1>
-            `
+            <h1 class="font-extrabold text-xl md:text-2xl mb-5">${donateMoneyThree} Taka is Donated for Injured in the Quota Movement</h1>
+            <p class="text-xl"> <span class="font-bold">Date & Time :</span> ${new Date().toLocaleString()}</p>`
             document.getElementById('history-log').appendChild(div);
 
             document.getElementById('my_modal_3').showModal();
