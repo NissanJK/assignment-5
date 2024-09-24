@@ -9,6 +9,15 @@ document.getElementById('btn-one')
             document.getElementById('money-available').innerText = updatedMoneyAvailable;
             const updatedDonation = donatedOne + donateMoneyOne;
             document.getElementById('donated-amount-one').innerText = updatedDonation;
+            const div =document.createElement('div');
+            div.classList.add('border');
+            div.classList.add('rounded-lg');
+            div.classList.add('p-8');
+            div.classList.add('mb-5');
+            div.innerHTML = `
+            <h1 class="font-extrabold text-xl md:text-2xl">${donateMoneyOne} Taka is Donated for Flood at Noakhali, Bangladesh</h1>
+            `
+            document.getElementById('history-log').appendChild(div);
 
             document.getElementById('my_modal_1').showModal();
         }
@@ -28,6 +37,15 @@ document.getElementById('btn-two')
             document.getElementById('money-available').innerText = updatedMoneyAvailable;
             const updatedDonation = donatedTwo + donateMoneyTwo;
             document.getElementById('donated-amount-two').innerText = updatedDonation;
+            const div =document.createElement('div');
+            div.classList.add('border');
+            div.classList.add('rounded-lg');
+            div.classList.add('p-8');
+            div.classList.add('mb-5');
+            div.innerHTML = `
+            <h1 class="font-extrabold text-xl md:text-2xl">${donateMoneyTwo} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
+            `
+            document.getElementById('history-log').appendChild(div);
 
             document.getElementById('my_modal_2').showModal();
         }
@@ -47,6 +65,15 @@ document.getElementById('btn-three')
             document.getElementById('money-available').innerText = updatedMoneyAvailable;
             const updatedDonation = donatedThree + donateMoneyThree;
             document.getElementById('donated-amount-three').innerText = updatedDonation;
+            const div =document.createElement('div');
+            div.classList.add('border');
+            div.classList.add('rounded-lg');
+            div.classList.add('p-8');
+            div.classList.add('mb-5');
+            div.innerHTML = `
+            <h1 class="font-extrabold text-xl md:text-2xl">${donateMoneyThree} Taka is Donated for Injured in the Quota Movement</h1>
+            `
+            document.getElementById('history-log').appendChild(div);
 
             document.getElementById('my_modal_3').showModal();
         }

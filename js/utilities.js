@@ -15,3 +15,9 @@ function showSectionById(id) {
     document.getElementById('history-section').classList.add('hidden');
     document.getElementById(id).classList.remove('hidden');
 }
+
+function changeColorById(id) {
+    document.getElementById('donation-btn').classList.add('btn-outline');
+    document.getElementById('history-btn').classList.add('btn-outline');
+    document.getElementById(id).classList.remove('btn-outline');
+}
