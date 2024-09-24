@@ -36,7 +36,8 @@
     <header class="w-full sticky top-0 z-10 bg-transparent backdrop-blur-md">
         <div class="navbar bg-base-100 pt-8 pb-16 w-11/12 md:w-10/12 mx-auto bg-transparent">
             <div class="navbar-start">
-                <a href="./blog.html" class="btn btn-primary bg-lime-400 hover:bg-lime-600 text-black border-none w-fit">Blog</a>
+                <a href="./blog.html"
+                    class="btn btn-primary bg-lime-400 hover:bg-lime-600 text-black border-none w-fit">Blog</a>
             </div>
             <div class="navbar-center gap-2 hidden lg:flex">
                 <img src="./assets/logo.png" alt="" class="size-12">
@@ -45,17 +46,18 @@
             <div class="navbar-end">
                 <div class=" w-fit flex flex-row items-center gap-2">
                     <img src="./assets/coin.png" alt="" class="size-6">
-                    <h1><span>10000</span> BDT</h1>
+                    <h1><span id="money-available">10000</span> BDT</h1>
                 </div>
             </div>
         </div>
         <div class="flex gap-5 justify-center pb-8">
-            <button class="btn btn-primary bg-lime-400 hover:bg-lime-600 text-black border-none w-fit font-semibold">Donation</button>
+            <button
+                class="btn btn-primary bg-lime-400 hover:bg-lime-600 text-black border-none w-fit font-semibold">Donation</button>
             <button class="btn btn-outline w-fit font-semibold">History</button>
         </div>
     </header>
     <main>
-        <section class="w-11/12 md:w-10/12 mx-auto">
+        <section id="donation-section" class="w-11/12 md:w-10/12 mx-auto">
             <div class="border p-8 mb-8 rounded-xl">
                 <div class="card card-side bg-base-100 flex-col lg:flex-row gap-8">
                     <figure class="lg:w-1/2 w-full">
@@ -64,19 +66,33 @@
                     <div class="card-body lg:w-1/2 w-full p-0">
                         <div class="bg-slate-100 rounded-lg p-3 w-fit flex flex-row items-center gap-2">
                             <img src="./assets/coin.png" alt="" class="size-6">
-                            <h1><span>0</span> BDT</h1>
+                            <h1><span id="donated-amount-one">0</span> BDT</h1>
                         </div>
                         <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
                         <p>The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
                             donation will help provide essential supplies and to those affected by this disaster. Every
                             contribution, big or small, makes difference. Please join us in supporting the relief
                             efforts and making a positive impact on the lives of those in need.</p>
-                        <input type="number" placeholder="Write Donation Amount"
+                        <input id="input-one" type="number" placeholder="Write Donation Amount"
                             class="input input-bordered w-full mb-3" />
                         <div class="card-actions">
-                            <button
+                            <button id="btn-one"
                                 class="btn btn-primary bg-lime-400 hover:bg-lime-600 text-black border-none w-full">Donate
                                 Now</button>
+                            <dialog id="my_modal_1" class="modal">
+                                <div class="modal-box flex flex-col justify-center items-center">
+                                    <h3 class="mb-5 text-2xl md:text-3xl lg:text-4xl font-extrabold">Congrats!</h3>
+                                    <img src="./assets/coin.png" alt="" class="size-10">
+                                    <p class="py-4">You Have Donated For Humankind</p>
+                                    <h1 class="font-bold text-xl">Successfully</h1>
+                                    <div class="modal-action">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn">Close Confirmation</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
                         </div>
                     </div>
                 </div>
@@ -89,7 +105,7 @@
                     <div class="card-body lg:w-1/2 w-full p-0">
                         <div class="bg-slate-100 rounded-lg p-3 w-fit flex flex-row items-center gap-2">
                             <img src="./assets/coin.png" alt="" class="size-6">
-                            <h1><span>0</span> BDT</h1>
+                            <h1><span id="donated-amount-two">0</span> BDT</h1>
                         </div>
                         <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
                         <p>The recent floods in Feni have devastated local communities, leading to severe disruption and
@@ -98,12 +114,26 @@
                             support and help rebuild lives in the aftermath of this disaster. Every contribution counts
                             towards making a real difference. Please consider donating today to assist those in urgent
                             need.</p>
-                        <input type="number" placeholder="Write Donation Amount"
+                        <input id="input-two" type="number" placeholder="Write Donation Amount"
                             class="input input-bordered w-full mb-3" />
                         <div class="card-actions">
-                            <button
+                            <button id="btn-two"
                                 class="btn btn-primary bg-lime-400 hover:bg-lime-600 text-black border-none w-full">Donate
                                 Now</button>
+                            <dialog id="my_modal_2" class="modal">
+                                <div class="modal-box flex flex-col justify-center items-center">
+                                    <h3 class="mb-5 text-2xl md:text-3xl lg:text-4xl font-extrabold">Congrats!</h3>
+                                    <img src="./assets/coin.png" alt="" class="size-10">
+                                    <p class="py-4">You Have Donated For Humankind</p>
+                                    <h1 class="font-bold text-xl">Successfully</h1>
+                                    <div class="modal-action">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn">Close Confirmation</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
                         </div>
                     </div>
                 </div>
@@ -116,7 +146,7 @@
                     <div class="card-body lg:w-1/2 w-full p-0">
                         <div class="bg-slate-100 rounded-lg p-3 w-fit flex flex-row items-center gap-2">
                             <img src="./assets/coin.png" alt="" class="size-6">
-                            <h1><span>0</span> BDT</h1>
+                            <h1><span id="donated-amount-three">0</span> BDT</h1>
                         </div>
                         <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
                         <p> The recent Quota movement has resulted in numerous injuries and significant hardship for
@@ -126,24 +156,40 @@
                             donation plays a vital role in alleviating their suffering and aiding in their recovery.
                             Please consider making a donation to support these brave individuals in their time of need.
                         </p>
-                        <input type="number" placeholder="Write Donation Amount"
+                        <input id="input-three" type="number" placeholder="Write Donation Amount"
                             class="input input-bordered w-full mb-3" />
                         <div class="card-actions">
-                            <button
+                            <button id="btn-three"
                                 class="btn btn-primary bg-lime-400 hover:bg-lime-600 text-black border-none w-full">Donate
                                 Now</button>
+                            <dialog id="my_modal_3" class="modal">
+                                <div class="modal-box flex flex-col justify-center items-center">
+                                    <h3 class="mb-5 text-2xl md:text-3xl lg:text-4xl font-extrabold">Congrats!</h3>
+                                    <img src="./assets/coin.png" alt="" class="size-10">
+                                    <p class="py-4">You Have Donated For Humankind</p>
+                                    <h1 class="font-bold text-xl">Successfully</h1>
+                                    <div class="modal-action">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn">Close Confirmation</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="w-11/12 md:w-10/12 mx-auto hidden">
+        <section id="history-section" class="w-11/12 md:w-10/12 mx-auto hidden">
 
         </section>
     </main>
     <footer class="bg-slate-100 h-40 mt-16">
 
     </footer>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
